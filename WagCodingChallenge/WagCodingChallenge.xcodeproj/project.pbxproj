@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		57D89FDBFF85B9B9E2C21646 /* Pods_WagCodingChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0066965FDD411D63219368E0 /* Pods_WagCodingChallenge.framework */; };
+		8C13D37D1DA4FC500019662D /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C13D3791DA4FC500019662D /* TableViewCell.swift */; };
+		8C13D37E1DA4FC500019662D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C13D37B1DA4FC500019662D /* ViewController.swift */; };
+		8C13D3811DA4FC650019662D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C13D37F1DA4FC650019662D /* Main.storyboard */; };
+		8C13D3831DA4FC810019662D /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C13D3821DA4FC810019662D /* UserCell.swift */; };
+		8C13D3851DA4FCF50019662D /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C13D3841DA4FCF50019662D /* UserCell.xib */; };
+		8C1B29CF1DA4B0BD00824931 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1B29CE1DA4B0BD00824931 /* AppDelegate.swift */; };
+		8C1B29D71DA4B0BD00824931 /* WagCodingChallenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8C1B29D51DA4B0BD00824931 /* WagCodingChallenge.xcdatamodeld */; };
+		8C1B29D91DA4B0BD00824931 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C1B29D81DA4B0BD00824931 /* Assets.xcassets */; };
+		8C1B29DC1DA4B0BD00824931 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C1B29DA1DA4B0BD00824931 /* LaunchScreen.storyboard */; };
+		8C6D15AF1DA4E3DF005C42F1 /* DataCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6D15AE1DA4E3DF005C42F1 /* DataCoordinator.swift */; };
+		8C9821831DA4BBB300C1A224 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9821811DA4BBB300C1A224 /* User+CoreDataProperties.swift */; };
+		8C9821861DA4BC0900C1A224 /* ModelObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9821841DA4BC0900C1A224 /* ModelObject.swift */; };
+		8C9821871DA4BC0900C1A224 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9821851DA4BC0900C1A224 /* User.swift */; };
+		8CC52D291DA4CE96009E7561 /* UserPager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC52D281DA4CE96009E7561 /* UserPager.swift */; };
+		8CED52BA1DA5052F00CA6533 /* UIImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CED52B91DA5052F00CA6533 /* UIImageCache.swift */; };
+		8CFE6F861DA4B43F0035925B /* APICommunication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFE6F7A1DA4B43F0035925B /* APICommunication.swift */; };
+		8CFE6F871DA4B43F0035925B /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFE6F7B1DA4B43F0035925B /* UserAPI.swift */; };
+		8CFE6F881DA4B43F0035925B /* URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFE6F7C1DA4B43F0035925B /* URLs.swift */; };
+		8CFE6F891DA4B43F0035925B /* CoreDataManagers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFE6F7E1DA4B43F0035925B /* CoreDataManagers.swift */; };
+		8CFE6F8D1DA4B43F0035925B /* Pager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFE6F841DA4B43F0035925B /* Pager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0066965FDD411D63219368E0 /* Pods_WagCodingChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WagCodingChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		548E8D32B79423B44DF9E9E6 /* Pods-WagCodingChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WagCodingChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WagCodingChallenge/Pods-WagCodingChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		6E8FE10ABA48DC4E0DFB8B3C /* Pods-WagCodingChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WagCodingChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-WagCodingChallenge/Pods-WagCodingChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		8C13D3791DA4FC500019662D /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		8C13D37B1DA4FC500019662D /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8C13D3801DA4FC650019662D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = WagCodingChallenge/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		8C13D3821DA4FC810019662D /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		8C13D3841DA4FCF50019662D /* UserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
+		8C1B29CB1DA4B0BD00824931 /* WagCodingChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WagCodingChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C1B29CE1DA4B0BD00824931 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8C1B29D61DA4B0BD00824931 /* WagCodingChallenge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WagCodingChallenge.xcdatamodel; sourceTree = "<group>"; };
+		8C1B29D81DA4B0BD00824931 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8C1B29DB1DA4B0BD00824931 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8C1B29DD1DA4B0BD00824931 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C6D15AE1DA4E3DF005C42F1 /* DataCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataCoordinator.swift; path = ../API/DataCoordinator.swift; sourceTree = "<group>"; };
+		8C9821811DA4BBB300C1A224 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8C9821841DA4BC0900C1A224 /* ModelObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ModelObject.swift; path = Models/ModelObject.swift; sourceTree = SOURCE_ROOT; };
+		8C9821851DA4BC0900C1A224 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Models/User.swift; sourceTree = SOURCE_ROOT; };
+		8CC52D281DA4CE96009E7561 /* UserPager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPager.swift; sourceTree = "<group>"; };
+		8CED52B91DA5052F00CA6533 /* UIImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageCache.swift; sourceTree = "<group>"; };
+		8CFE6F7A1DA4B43F0035925B /* APICommunication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APICommunication.swift; sourceTree = "<group>"; };
+		8CFE6F7B1DA4B43F0035925B /* UserAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAPI.swift; sourceTree = "<group>"; };
+		8CFE6F7C1DA4B43F0035925B /* URLs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLs.swift; sourceTree = "<group>"; };
+		8CFE6F7E1DA4B43F0035925B /* CoreDataManagers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManagers.swift; sourceTree = "<group>"; };
+		8CFE6F841DA4B43F0035925B /* Pager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8C1B29C81DA4B0BD00824931 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57D89FDBFF85B9B9E2C21646 /* Pods_WagCodingChallenge.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		528BED17390875D5D603186F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0066965FDD411D63219368E0 /* Pods_WagCodingChallenge.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		83E66558DF5F18573803271E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				548E8D32B79423B44DF9E9E6 /* Pods-WagCodingChallenge.debug.xcconfig */,
+				6E8FE10ABA48DC4E0DFB8B3C /* Pods-WagCodingChallenge.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8C13D3761DA4FC500019662D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8C13D37F1DA4FC650019662D /* Main.storyboard */,
+				8C13D37A1DA4FC500019662D /* Controllers */,
+				8C13D3771DA4FC500019662D /* Cells */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		8C13D3771DA4FC500019662D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8C13D3791DA4FC500019662D /* TableViewCell.swift */,
+				8C13D3861DA502200019662D /* User */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		8C13D37A1DA4FC500019662D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8C13D37B1DA4FC500019662D /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8C13D3861DA502200019662D /* User */ = {
+			isa = PBXGroup;
+			children = (
+				8C13D3821DA4FC810019662D /* UserCell.swift */,
+				8C13D3841DA4FCF50019662D /* UserCell.xib */,
+			);
+			name = User;
+			sourceTree = "<group>";
+		};
+		8C13D3871DA502360019662D /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				8C1B29D81DA4B0BD00824931 /* Assets.xcassets */,
+				8C1B29DA1DA4B0BD00824931 /* LaunchScreen.storyboard */,
+				8C1B29DD1DA4B0BD00824931 /* Info.plist */,
+			);
+			name = Misc;
+			sourceTree = "<group>";
+		};
+		8C1B29C21DA4B0BD00824931 = {
+			isa = PBXGroup;
+			children = (
+				8C1B29CD1DA4B0BD00824931 /* WagCodingChallenge */,
+				8C1B29CC1DA4B0BD00824931 /* Products */,
+				83E66558DF5F18573803271E /* Pods */,
+				528BED17390875D5D603186F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8C1B29CC1DA4B0BD00824931 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8C1B29CB1DA4B0BD00824931 /* WagCodingChallenge.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8C1B29CD1DA4B0BD00824931 /* WagCodingChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				8C1B29CE1DA4B0BD00824931 /* AppDelegate.swift */,
+				8CA59EEC1DA50CBC00C4DA9F /* Image Caching */,
+				8C13D3761DA4FC500019662D /* UI */,
+				8CFE6F791DA4B43F0035925B /* API */,
+				8CFE6F7D1DA4B43F0035925B /* Core Data */,
+				8CFE6F7F1DA4B43F0035925B /* Models */,
+				8CFE6F831DA4B43F0035925B /* Pagers */,
+				8C13D3871DA502360019662D /* Misc */,
+			);
+			path = WagCodingChallenge;
+			sourceTree = "<group>";
+		};
+		8CA59EEC1DA50CBC00C4DA9F /* Image Caching */ = {
+			isa = PBXGroup;
+			children = (
+				8CED52B91DA5052F00CA6533 /* UIImageCache.swift */,
+			);
+			name = "Image Caching";
+			sourceTree = "<group>";
+		};
+		8CFE6F791DA4B43F0035925B /* API */ = {
+			isa = PBXGroup;
+			children = (
+				8CFE6F7A1DA4B43F0035925B /* APICommunication.swift */,
+				8CFE6F7B1DA4B43F0035925B /* UserAPI.swift */,
+				8CFE6F7C1DA4B43F0035925B /* URLs.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		8CFE6F7D1DA4B43F0035925B /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				8C1B29D51DA4B0BD00824931 /* WagCodingChallenge.xcdatamodeld */,
+				8C6D15AE1DA4E3DF005C42F1 /* DataCoordinator.swift */,
+				8CFE6F7E1DA4B43F0035925B /* CoreDataManagers.swift */,
+			);
+			path = "Core Data";
+			sourceTree = "<group>";
+		};
+		8CFE6F7F1DA4B43F0035925B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8C9821841DA4BC0900C1A224 /* ModelObject.swift */,
+				8C9821851DA4BC0900C1A224 /* User.swift */,
+				8C9821811DA4BBB300C1A224 /* User+CoreDataProperties.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8CFE6F831DA4B43F0035925B /* Pagers */ = {
+			isa = PBXGroup;
+			children = (
+				8CFE6F841DA4B43F0035925B /* Pager.swift */,
+				8CC52D281DA4CE96009E7561 /* UserPager.swift */,
+			);
+			path = Pagers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8C1B29CA1DA4B0BD00824931 /* WagCodingChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C1B29E01DA4B0BD00824931 /* Build configuration list for PBXNativeTarget "WagCodingChallenge" */;
+			buildPhases = (
+				8941E1E989048E56F40485F8 /* [CP] Check Pods Manifest.lock */,
+				8C1B29C71DA4B0BD00824931 /* Sources */,
+				8C1B29C81DA4B0BD00824931 /* Frameworks */,
+				8C1B29C91DA4B0BD00824931 /* Resources */,
+				8E9A915927056B56C64F5B3B /* [CP] Embed Pods Frameworks */,
+				FF1B2A22B72FE51C525BF21E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WagCodingChallenge;
+			productName = WagCodingChallenge;
+			productReference = 8C1B29CB1DA4B0BD00824931 /* WagCodingChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8C1B29C31DA4B0BD00824931 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "James Ajhar";
+				TargetAttributes = {
+					8C1B29CA1DA4B0BD00824931 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 494VSAG4XW;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 8C1B29C61DA4B0BD00824931 /* Build configuration list for PBXProject "WagCodingChallenge" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8C1B29C21DA4B0BD00824931;
+			productRefGroup = 8C1B29CC1DA4B0BD00824931 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8C1B29CA1DA4B0BD00824931 /* WagCodingChallenge */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8C1B29C91DA4B0BD00824931 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C13D3851DA4FCF50019662D /* UserCell.xib in Resources */,
+				8C13D3811DA4FC650019662D /* Main.storyboard in Resources */,
+				8C1B29DC1DA4B0BD00824931 /* LaunchScreen.storyboard in Resources */,
+				8C1B29D91DA4B0BD00824931 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8941E1E989048E56F40485F8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8E9A915927056B56C64F5B3B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WagCodingChallenge/Pods-WagCodingChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF1B2A22B72FE51C525BF21E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WagCodingChallenge/Pods-WagCodingChallenge-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8C1B29C71DA4B0BD00824931 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C13D37E1DA4FC500019662D /* ViewController.swift in Sources */,
+				8CC52D291DA4CE96009E7561 /* UserPager.swift in Sources */,
+				8CFE6F891DA4B43F0035925B /* CoreDataManagers.swift in Sources */,
+				8CED52BA1DA5052F00CA6533 /* UIImageCache.swift in Sources */,
+				8CFE6F881DA4B43F0035925B /* URLs.swift in Sources */,
+				8CFE6F861DA4B43F0035925B /* APICommunication.swift in Sources */,
+				8C1B29CF1DA4B0BD00824931 /* AppDelegate.swift in Sources */,
+				8C13D37D1DA4FC500019662D /* TableViewCell.swift in Sources */,
+				8C9821861DA4BC0900C1A224 /* ModelObject.swift in Sources */,
+				8C13D3831DA4FC810019662D /* UserCell.swift in Sources */,
+				8CFE6F871DA4B43F0035925B /* UserAPI.swift in Sources */,
+				8C9821871DA4BC0900C1A224 /* User.swift in Sources */,
+				8C1B29D71DA4B0BD00824931 /* WagCodingChallenge.xcdatamodeld in Sources */,
+				8C9821831DA4BBB300C1A224 /* User+CoreDataProperties.swift in Sources */,
+				8CFE6F8D1DA4B43F0035925B /* Pager.swift in Sources */,
+				8C6D15AF1DA4E3DF005C42F1 /* DataCoordinator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8C13D37F1DA4FC650019662D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C13D3801DA4FC650019662D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8C1B29DA1DA4B0BD00824931 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C1B29DB1DA4B0BD00824931 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8C1B29DE1DA4B0BD00824931 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8C1B29DF1DA4B0BD00824931 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8C1B29E11DA4B0BD00824931 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 548E8D32B79423B44DF9E9E6 /* Pods-WagCodingChallenge.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 494VSAG4XW;
+				INFOPLIST_FILE = WagCodingChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.outlierstudios.WagCodingChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		8C1B29E21DA4B0BD00824931 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E8FE10ABA48DC4E0DFB8B3C /* Pods-WagCodingChallenge.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 494VSAG4XW;
+				INFOPLIST_FILE = WagCodingChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.outlierstudios.WagCodingChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8C1B29C61DA4B0BD00824931 /* Build configuration list for PBXProject "WagCodingChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C1B29DE1DA4B0BD00824931 /* Debug */,
+				8C1B29DF1DA4B0BD00824931 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C1B29E01DA4B0BD00824931 /* Build configuration list for PBXNativeTarget "WagCodingChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C1B29E11DA4B0BD00824931 /* Debug */,
+				8C1B29E21DA4B0BD00824931 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8C1B29D51DA4B0BD00824931 /* WagCodingChallenge.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8C1B29D61DA4B0BD00824931 /* WagCodingChallenge.xcdatamodel */,
+			);
+			currentVersion = 8C1B29D61DA4B0BD00824931 /* WagCodingChallenge.xcdatamodel */;
+			name = WagCodingChallenge.xcdatamodeld;
+			path = ../WagCodingChallenge.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8C1B29C31DA4B0BD00824931 /* Project object */;
+}
