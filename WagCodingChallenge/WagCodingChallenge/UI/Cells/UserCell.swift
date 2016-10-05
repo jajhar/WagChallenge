@@ -35,6 +35,13 @@ class UserCell: TableViewCell {
         
     }
     
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        
+        avatarImageView.image = nil
+        infoLabel.text = ""
+    }
+    
     func fetchAvatar() {
         guard let url = user?.getUserAvatarURL() else {
             activityIndicator.isHidden = true
@@ -43,9 +50,7 @@ class UserCell: TableViewCell {
         activityIndicator.isHidden = false
         activityIndicator.startAnimating()
         url.fetchImage { [weak self] (success, image) in
-            guard let strongSelf = self else { return }
-            if !success { return }
-            guard let image = image else { return }
+            guard success, let strongSelf = self, let image = image else { return }
             
             strongSelf.avatarImageView.image = image
             strongSelf.activityIndicator.stopAnimating()

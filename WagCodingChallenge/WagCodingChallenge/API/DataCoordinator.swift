@@ -24,6 +24,7 @@ struct DataCoordinator: DataCoordinatorProtocol {
         api.getUsers(withCompletion: { (userJSONArray) in
             
             DispatchQueue.global().async {
+                // Break off onto a background thread and create each user with the given raw JSON array
                 var users = [User]()
                 for rawUser in userJSONArray {
                     let privateContext = self.coreDataManager.persistentContainer.newBackgroundContext()
@@ -33,7 +34,8 @@ struct DataCoordinator: DataCoordinatorProtocol {
                     }
                 }
                 
-                // passing ids is the only thread safe way to transfer NSManagedObjects between threads
+                // Passing of NSManagedObjectIDs is the only thread safe way to transfer NSManagedObjects between threads
+                //  so we need to first capture the list of NSManagedObjectIDs
                 var objectIds = [NSManagedObjectID]()
                 for user in users {
                     objectIds.append(user.objectID)
@@ -41,9 +43,8 @@ struct DataCoordinator: DataCoordinatorProtocol {
                 
                 // Switch back to main thread
                 DispatchQueue.main.async {
-                    // perform fetch on main thread to prevent data faults
+                    // Perform fetch on main thread using the main context to prevent data faults
                     var mainThreadUsers = [User]()
-                    
                     for id in objectIds {
                         if let obj = try? self.coreDataManager.persistentContainer.viewContext.existingObject(with: id) as? User {
                             guard let obj = obj else { continue }
