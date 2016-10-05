@@ -6,7 +6,6 @@ target 'WagCodingChallenge' do
   use_frameworks!
 
   # Pods for WagCodingChallenge
-  pod 'SDWebImage'
   pod 'Alamofire', :git => 'https://github.com/Alamofire/Alamofire.git'
 
 

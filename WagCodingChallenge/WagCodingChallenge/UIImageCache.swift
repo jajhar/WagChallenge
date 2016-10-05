@@ -27,11 +27,13 @@ extension URL {
     
     func fetchImage(completion: @escaping ImageCacheCompletion) {
         
+        // First check if the cached image already exists
         if let cachedImage = UIImageCache.shared.object(forKey: absoluteString as NSString) as? UIImage {
             completion(true, cachedImage)
             return
         }
         
+        // else download it from this URL
         let task = URLSession.shared.dataTask(with: self, completionHandler: { (data, response, error) in
             if error != nil {
                 DispatchQueue.main.async {
@@ -47,6 +49,7 @@ extension URL {
                 return
             }
             
+            // Store the image in cache
             UIImageCache.shared.setObject(image,
                                           forKey: self.absoluteString as NSString ,
                                           cost: data.count)
