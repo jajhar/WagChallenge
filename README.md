@@ -6,6 +6,10 @@
 - Flesh Out User Model with more data from API
 - Extend UserPager.swift to support pagination
 
+## Running The Project
+
+To run the project simply open the included .xcworkspace file and build as usual.
+
 ## Project Structure
 
 ### UI
