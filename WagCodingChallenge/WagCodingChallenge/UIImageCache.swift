@@ -57,7 +57,6 @@ extension URL {
             DispatchQueue.main.async {
                 completion(true, image)
             }
-
         })
         task.resume()
     }

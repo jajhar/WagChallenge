@@ -30,11 +30,6 @@ class UserCell: TableViewCell {
         return "UserCell"
     }
     
-    override func commonInit() {
-        super.commonInit()
-        
-    }
-    
     override func prepareForReuse() {
         super.prepareForReuse()
         

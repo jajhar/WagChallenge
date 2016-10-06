@@ -9,7 +9,7 @@
 import UIKit
 import Alamofire
 
-protocol APICommunicationProtocol {
+protocol APICommunicationProtocol : class {
     var urlsManager: URLs { get }
     func sendRequestWithURL(url: URL,
                             requestType: HTTPMethod,
@@ -24,7 +24,7 @@ typealias CompletionBlock = (Any?) -> Void
 typealias ProgressBlock = (Float) -> Void
 typealias FailureBlock = (URLResponse?, Error?) -> Void
 
-struct APICommunication: APICommunicationProtocol {
+class APICommunication: APICommunicationProtocol {
     
     let urlsManager: URLs = URLs()
     

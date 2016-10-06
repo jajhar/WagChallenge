@@ -9,12 +9,12 @@
 import Foundation
 import CoreData
 
-protocol DataCoordinatorProtocol {
+protocol DataCoordinatorProtocol : class {
     var api: APICommunication { get }
     var coreDataManager: CoreDataManager { get }
 }
 
-struct DataCoordinator: DataCoordinatorProtocol {
+class DataCoordinator: DataCoordinatorProtocol {
     
     let api = APICommunication()
     let coreDataManager = CoreDataManager()
@@ -52,18 +52,20 @@ extension DataCoordinator {
         
         api.getUsers(withCompletion: { (userJSONArray) in
             
-            DispatchQueue.global().async {
+            DispatchQueue.global().async { [weak self] in
+                guard let strongSelf = self else { return }
+                
                 // Break off onto a background thread and create each user with the given raw JSON array
                 var users = [User]()
                 for rawUser in userJSONArray {
-                    let privateContext = self.coreDataManager.persistentContainer.newBackgroundContext()
-                    if let user = self.coreDataManager.createUser(wthJSON: rawUser,
+                    let privateContext = strongSelf.coreDataManager.persistentContainer.newBackgroundContext()
+                    if let user = strongSelf.coreDataManager.createUser(wthJSON: rawUser,
                                                                   inManagedObjectContext: privateContext) {
                         users.append(user)
                     }
                 }
                 
-                self.transferObjectsToMainThread(objects: users, completion: completion)
+                strongSelf.transferObjectsToMainThread(objects: users, completion: completion)
             }
             
         }) { (response, error) in
